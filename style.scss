@@ -1,0 +1,91 @@
+$green: #008186;
+$yellow: #f5b307;
+$red: #fc6746;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Staatliches', cursive;
+    background-color: $green;
+}
+h2{
+    text-align: center;
+    margin: 2em;
+    margin-bottom: .5em;
+    font-size: 6vmin;
+    color: $yellow;
+}
+ h2:hover{
+    color: black;
+    opacity: 70%;
+}
+.container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    margin-top: 2em;
+    cursor: pointer;
+}
+.board{
+    width: 35vmin;
+    height: 35vmin;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    color: rgb(218, 216, 216);
+}
+
+.cell{
+    border: 2px solid $yellow;
+    ;
+    justify-content: center;
+    align-items: center;
+    font-size: 9vmin;
+    text-align: center;
+}
+.cell:hover{
+    background-color: green;
+    opacity: 40%;
+}
+.cell:nth-child(3n){
+    border-right: none;
+    
+}
+.cell:nth-child(1n){
+    border-bottom: none;
+    border-left: none;
+}
+
+.cell:nth-child(0n + 1){
+    border-top: none;
+}
+.cell:nth-child(0n + 2){
+    border-top: none;
+}
+.cell:nth-child(0n + 3){
+    border-top: none;
+}
+.result {
+    text-align: center;
+    font-size: 6vmin;
+    color: rgb(218, 216, 216);
+}
+.restart{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 1em;
+   button{
+   background-color: $yellow;
+   padding: .8vmin;
+   font-size: 2.5vmin;
+   cursor: pointer;
+}
+}
+.restart button:hover{
+    background-color: green;
+    color: rgb(218, 216, 216);
+}

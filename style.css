@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Staatliches', cursive;
+  background-color: #008186;
+}
+
+h2 {
+  text-align: center;
+  margin: 2em;
+  margin-bottom: .5em;
+  font-size: 6vmin;
+  color: #f5b307;
+}
+
+h2:hover {
+  color: black;
+  opacity: 70%;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2em;
+  margin-top: 2em;
+  cursor: pointer;
+}
+
+.board {
+  width: 35vmin;
+  height: 35vmin;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  color: #dad8d8;
+}
+
+.cell {
+  border: 2px solid #f5b307;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 9vmin;
+  text-align: center;
+}
+
+.cell:hover {
+  background-color: green;
+  opacity: 40%;
+}
+
+.cell:nth-child(3n) {
+  border-right: none;
+}
+
+.cell:nth-child(1n) {
+  border-bottom: none;
+  border-left: none;
+}
+
+.cell:nth-child(0n + 1) {
+  border-top: none;
+}
+
+.cell:nth-child(0n + 2) {
+  border-top: none;
+}
+
+.cell:nth-child(0n + 3) {
+  border-top: none;
+}
+
+.result {
+  text-align: center;
+  font-size: 6vmin;
+  color: #dad8d8;
+}
+
+.restart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1em;
+}
+
+.restart button {
+  background-color: #f5b307;
+  padding: .8vmin;
+  font-size: 2.5vmin;
+  cursor: pointer;
+}
+
+.restart button:hover {
+  background-color: green;
+  color: #dad8d8;
+}
+/*# sourceMappingURL=style.css.map */
